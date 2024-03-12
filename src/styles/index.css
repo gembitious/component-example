@@ -12,5 +12,61 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  width: calc(100vw - 48px);
+  min-height: calc(100vh - 48px);
+  padding: 24px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container {
+  width: 100%;
+  height: calc(50% - 8px);
+  display: flex;
+  gap: 8px;
+  overflow: hidden;
+}
+
+.card {
+  background-color: white;
+  width: calc((100% - 24px) / 4);
+  max-width: 240px;
+  min-height: 120px;
+}
+
+.card .landscape {
+  max-width: 480px;
+}
+
+.card > .label {
+  color: gray;
+  font-size: 12px;
+}
+
+.card > .title {
+  font-size: 18px;
+}
+
+.card > .author {
+  color: orangered;
+}
+
+.card > .description {
+  color: gray;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-input {
+  width: 100%;
 }
